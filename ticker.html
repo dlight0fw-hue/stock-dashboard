@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>글로벌 시장지표</title>
+  <style>
+    html, body { width: 100%; min-height: 100%; margin: 0; background: #ffffff; overflow: hidden; }
+    .market-ticker, .tradingview-widget-container, .tradingview-widget-container__widget { width: 100%; min-height: 74px; }
+  </style>
+</head>
+<body>
+  <main class="market-ticker">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          { "proName": "FOREXCOM:SPXUSD", "title": "S&P 500" },
+          { "proName": "FOREXCOM:NSXUSD", "title": "NASDAQ 100" },
+          { "proName": "CAPITALCOM:VIX", "title": "VIX" },
+          { "proName": "TVC:US10Y", "title": "미국 10년물" },
+          { "proName": "FX_IDC:USDKRW", "title": "USD/KRW" },
+          { "proName": "TVC:DXY", "title": "달러 인덱스" },
+          { "proName": "TVC:USOIL", "title": "WTI" },
+          { "proName": "OANDA:XAUUSD", "title": "금" },
+          { "proName": "BITSTAMP:BTCUSD", "title": "비트코인" },
+          { "proName": "BITSTAMP:ETHUSD", "title": "이더리움" }
+        ],
+        "colorTheme": "light",
+        "locale": "kr",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": true,
+        "displayMode": "adaptive"
+      }
+      </script>
+    </div>
+  </main>
+</body>
+</html>
